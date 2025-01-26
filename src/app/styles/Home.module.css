@@ -154,7 +154,7 @@
 }
 
 /* Seção de Endereço */
-.addressSection {
+/* .addressSection {
   padding: 2rem;
   text-align: center;
 }
@@ -167,12 +167,88 @@
   margin: 0.5rem 0;
   font-size: 1.1rem;
   color: #333;
+} */
+
+/* Seção de Endereço Novo*/
+.addressSection {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.addressSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.addressContent {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 500px; /* Defina uma altura para o contêiner pai */
+}
+
+.addressInfo {
+  flex: 1; /* Ocupa metade do espaço */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  color: #ff6347;
+}
+
+.infoItem h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.infoItem p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.25rem 0;
+}
+
+.mapContainer {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Mapa do Google Maps */
 .mapContainer {
-  margin-top: 1.5rem;
-  border-radius: 8px;
+  flex: 1; /* Ocupa metade do espaço */
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ocupa toda a altura do contêiner pai */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .addressContent {
+    flex-direction: column;
+  }
+
+  .addressInfo {
+    text-align: center;
+  }
+
+  .infoItem {
+    flex-direction: column;
+    text-align: center;
+  }
 }
