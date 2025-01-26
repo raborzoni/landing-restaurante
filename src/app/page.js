@@ -2,6 +2,7 @@ import ProductCard from './components/ProductCard';
 import styles from './styles/Home.module.css';
 import products from './data/products';
 import Link from 'next/link';
+import { FaPhone, FaWhatsapp, FaEnvelope } from 'react-icons/fa'; // Ícones do React Icons
 
 export default function Home() {
   return (
@@ -25,12 +26,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Seção de Contato */}
       <section id="contato" className={styles.contactSection}>
         <h2>Contato</h2>
-        <div className={styles.contactInfo}>
-          <p>Telefone: (11) 1234-5678</p>
-          <p>WhatsApp: (11) 98765-4321</p>
-          <p>Email: contato@restaurante.com</p>
+        <div className={styles.contactGrid}>
+          <div className={styles.contactCard}>
+            <FaPhone className={styles.contactIcon} />
+            <h3>Telefone</h3>
+            <p>(11) 1234-5678</p>
+          </div>
+          <div className={styles.contactCard}>
+            <FaWhatsapp className={styles.contactIcon} />
+            <h3>WhatsApp</h3>
+            <p>(11) 98765-4321</p>
+          </div>
+          <div className={styles.contactCard}>
+            <FaEnvelope className={styles.contactIcon} />
+            <h3>Email</h3>
+            <p>contato@restaurante.com</p>
+          </div>
         </div>
       </section>
 

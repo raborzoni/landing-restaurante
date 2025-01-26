@@ -1,19 +1,20 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: iFood RC Textos, helvetica, sans-serif;
-  }
-  
-  .main {
-    flex: 1;
-    padding: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: iFood RC Textos, helvetica, sans-serif;
+}
 
-  /* Banner Principal */
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Banner Principal */
 .banner {
   position: relative;
-  height: 400px; /* Ajuste a altura conforme necessário */
+  height: 400px;
+  /* Ajuste a altura conforme necessário */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,28 +30,33 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/restaurante-banner.jpg'); /* Caminho da imagem */
+  background-image: url('/images/restaurante-banner.jpg');
+  /* Caminho da imagem */
   background-size: cover;
   background-position: center;
-  opacity: 0.8; /* Ajuste a opacidade da imagem */
+  opacity: 0.8;
+  /* Ajuste a opacidade da imagem */
   z-index: 1;
 }
 
 .bannerContent {
   position: relative;
-  z-index: 2; /* Garante que o texto fique acima da imagem */
+  z-index: 2;
+  /* Garante que o texto fique acima da imagem */
 }
 
 .banner h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Sombra para destacar o texto */
 }
 
 .banner p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Sombra para destacar o texto */
 }
 
 .bannerButton {
@@ -67,35 +73,20 @@
 .bannerButton:hover {
   background-color: #e5533d;
 }
-  
-  /* .banner {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f8f8f8;
-  }
-  
-  .bannerButton {
-    background-color: #ff6347;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  } */
-  
-  .menu {
-    margin-top: 2rem;
-    text-align: center;
-  }
-  
-  .productGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-  }
 
-  /* Seção de Contato */
-.contactSection {
+.menu {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Seção de Contato */
+/* .contactSection {
   padding: 2rem;
   background-color: #f8f8f8;
   text-align: center;
@@ -109,6 +100,57 @@
   margin: 0.5rem 0;
   font-size: 1.1rem;
   color: #333;
+} */
+
+/* Seção de Contato */
+.contactSection {
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.contactSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contactIcon {
+  font-size: 2.5rem;
+  color: #ff6347;
+  margin-bottom: 1rem;
+}
+
+.contactCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.contactCard p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
 /* Seção de Endereço */
