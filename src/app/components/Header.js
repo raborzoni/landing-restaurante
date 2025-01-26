@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <img src="/1.png" alt="Logo do Restaurante" className={styles.logo} />
+      <img src="/2.png" alt="Logo do Restaurante" className={styles.logo} />
       <nav>
         <a href="#cardapio" className={styles.navLink}>Cardápio</a>
         <a href="#contato" className={styles.navLink}>Contato</a>

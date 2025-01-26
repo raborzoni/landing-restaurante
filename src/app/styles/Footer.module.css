@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-around;
     padding: 2rem;
-    background-color: #333;
-    color: white;
+    background-color: #d8bd42;
+    color: black;
+    font-family: iFood RC Textos, helvetica, sans-serif;
   }
   
   .address,
@@ -15,7 +16,7 @@
   
   .social a {
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
     margin: 0.5rem 0;
   }
